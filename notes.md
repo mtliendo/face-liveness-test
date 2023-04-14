@@ -339,3 +339,14 @@ test 2. I moved too much so it failed.
 test3. I clicked try again but the websocket from the previous session was open(?)
 
 test 4. OMG so this would've worked, but in dev, react calls useEffect twice, so my sessionId referred to the first session even though my state updated and gave me a new one.
+
+Calling this good for now. I should probably host this just to make sure. Will update.
+
+## Closing thoughts:
+
+- This was more or less pretty smooth.
+- The adding the policy in the console thing still bothers me. also note that the policy in the docs isn't complete.
+- As shown in the code above, the AWS docs need to be updated asap to include the `req` being passed to the `getRekognitionClient`.
+- Websocket timeouts and retries, and general error handling are something that would trip up any dev trying to do this.
+- The Java/python part isn't needed. Atleast, I didn't do it.
+- This is ready to be built on and integrated into a real-world app. A few rough edges, but considering everything it's doing, it's kinda crazy I got this all up and running in 90 minutes.
